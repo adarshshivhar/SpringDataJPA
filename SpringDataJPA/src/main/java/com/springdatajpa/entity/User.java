@@ -1,5 +1,6 @@
 package com.springdatajpa.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,6 +19,7 @@ public class User {
 	
 	private String lastName;
 	
+	@Column(unique = true)
 	private String email;
 	
 	public User() {
